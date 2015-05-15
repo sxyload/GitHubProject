@@ -44,15 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAdapter\ISplit.cs" />
+    <Compile Include="DataAdapter\Symbols.cs" />
+    <Compile Include="DataModel\IData.cs" />
+    <Compile Include="DataModel\TestModel1.cs" />
+    <Compile Include="DataModel\Turple.cs" />
+    <Compile Include="FileModel\BaseFile.cs" />
+    <Compile Include="FileModel\CSVFile.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IO.cs" />
+    <Compile Include="DataAdapter\IOHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
